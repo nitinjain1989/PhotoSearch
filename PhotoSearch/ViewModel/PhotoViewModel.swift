@@ -33,6 +33,11 @@ class PhotoViewModel
                 
                 guard let sself = self else { return }
                 sself.isFetching = false
+                if error != nil
+                {
+                    sself.errorListener?()
+                }
+                else
                 if let reponseDict = response as? [String:Any]
                 {
                     if let pages = reponseDict["pages"] as? Int
