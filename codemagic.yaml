@@ -5,7 +5,6 @@ workflows:
         - push
       branch_patterns: 
         - pattern: master
-        - pattern: develop
           include: false
       cancel_previous_builds: true
     environment:
