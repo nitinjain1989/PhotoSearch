@@ -8,9 +8,9 @@ workflows:
           include: false
       cancel_previous_builds: true
     environment:
-      vars:
-          XCODE_WORKSPACE: "PhotoSearch.xcodeproj"
-          XCODE_SCHEME: "PhotoSearch"
+      #vars:
+         # XCODE_WORKSPACE: "PhotoSearch.xcodeproj"
+         # XCODE_SCHEME: "PhotoSearch"
       xcode: 12.5
     scripts:
       - name: say hello
