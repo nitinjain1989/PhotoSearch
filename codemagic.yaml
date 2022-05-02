@@ -1,5 +1,13 @@
 workflows:
   my-workflow:
+    triggering:
+      events:
+        - push
+      branch_patterns: 
+        - pattern: master
+        - pattern: develop
+          include: false
+      cancel_previous_builds: true
     environment:
       vars:
           XCODE_WORKSPACE: "PhotoSearch.xcodeproj"
