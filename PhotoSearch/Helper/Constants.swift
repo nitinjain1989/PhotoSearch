@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+  
 struct Keys
 {
     static let flickrKey = "3e7cc266ae2b0e0d78e279ce8e361736"
